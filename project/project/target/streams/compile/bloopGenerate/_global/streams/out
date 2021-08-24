@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0m[cats-seed-build-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[cats-seed-build-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'cats-seed-build-build' to '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/project/project/.bloop/cats-seed-build-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/cats-seed-build-build.json[0m

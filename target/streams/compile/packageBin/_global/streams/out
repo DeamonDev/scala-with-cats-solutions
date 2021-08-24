@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/target/scala-2.13/cats-seed_2.13-0.0.1-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sandbox[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/target/scala-2.13/classes/sandbox[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sandbox/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/target/scala-2.13/classes/sandbox/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sandbox/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/target/scala-2.13/classes/sandbox/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sandbox/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/target/scala-2.13/classes/sandbox/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

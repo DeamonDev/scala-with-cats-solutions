@@ -1,0 +1,4 @@
+[debug] [cats-seed-test] Classpath dependencies List()
+[debug] [cats-seed-test] Dependencies from configurations List(cats-seed)
+[debug] Bloop wrote the configuration of project 'cats-seed-test' to '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/.bloop/cats-seed-test.json'
+[success] Generated .bloop/cats-seed-test.json
