@@ -7,5 +7,7 @@ object PrintableLibrary extends App {
     val omi = Cat("Ominiuszka", 1, "white & black")
 
     print(omi)
+    // Ominiuszka is a 1 year-old white & black cat.
+
   
 }
