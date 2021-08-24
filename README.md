@@ -1,3 +1,7 @@
+# Solutions to exercises 
+
+Sometimes I attach some code snippets from the book to present solutions with broaded perspective. 
+
 # Scala with Cats Code
 
 Sandbox project for the exercises in the book [Scala with Cats][book].
