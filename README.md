@@ -1,6 +1,6 @@
-# Solutions to exercises 
+# Solutions to the exercises 
 
-Sometimes I attach some code snippets from the book to present solutions with broaded perspective. 
+Sometimes I attach some code snippets from the book to present solutions with broader perspective. 
 
 # Scala with Cats Code
 
