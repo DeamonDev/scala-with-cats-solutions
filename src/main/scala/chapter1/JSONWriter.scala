@@ -10,7 +10,7 @@ object JSONWriter {
     final case object JSNull extends JSON
 
     //This is our type class
-    trait JSONWriter[A] { 
+    trait JSONWriter[-A] { 
         def write(value: A): JSON
     }
 
