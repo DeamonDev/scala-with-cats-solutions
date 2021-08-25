@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/src/main/scala/chapter1/PrintableLibraryWithCats.scala:3:13: Unused import[0m
+[0m[[0m[31merror[0m] [0m[0mimport cats._[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/src/main/scala/chapter1/PrintableLibraryWithCats.scala:4:23: Unused import[0m
+[0m[[0m[31merror[0m] [0m[0mimport cats.implicits._ [0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

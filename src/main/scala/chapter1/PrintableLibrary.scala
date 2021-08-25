@@ -8,6 +8,5 @@ object PrintableLibrary extends App {
 
     print(omi)
     // Ominiuszka is a 1 year-old white & black cat.
-
   
 }
