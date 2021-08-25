@@ -1,10 +1,12 @@
 package sandbox
 
 import cats._
-import cats.implicits._
 import java.util.Date
+import cats.Eq
 
 object Main extends App {
+
+  import cats.implicits._
 
   val showInt: Show[Int] = Show.apply[Int]
   val showString: Show[String] = Show.apply[String]
@@ -24,8 +26,18 @@ object Main extends App {
   
   /*
     implicit val dateShow: Show[Date] = 
-      Show.show(date => s"{date.getTime}ms since the spoch.")
+      Show.show(date => s"{date.getTime}ms since the epoch.")
   */
 
+
+  implicit val dateEq: Eq[Date] = Eq.instance[Date] { 
+    (date1, date2) => date1.getTime === date2.getTime
+  }
+
+  val x = new Date()
+  val y = new Date() 
+
+  println(x === x)
+  println(x === y)
 
 }
