@@ -27,6 +27,7 @@ object MonoidPlayground extends App {
 
     val optionIntList: List[Option[Int]] = intList.map(x => Option(x))
     println(add(optionIntList))
+    println(add(optionIntList))
 
     val map1 = Map("a" -> 1, "b" -> 2)
     val map2 = Map("b" -> 3, "d" -> 4)

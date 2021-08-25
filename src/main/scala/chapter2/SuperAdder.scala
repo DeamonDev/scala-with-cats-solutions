@@ -16,6 +16,15 @@ object SupperAdder {
         override def empty: Int = 0
     }
 
+    implicit val optionMonoid: Monoid[Option[Int]] = new Monoid[Option[Int]] { 
+        override def combine(x: Option[Int], y: Option[Int]): Option[Int] = (x, y) match { 
+            case (Some(a), Some(b)) => Some(intMonoid.combine(a, b))
+            case (_, None) => None
+            case (None, _) => None
+        }
+
+        override def empty: Option[Int] =  Some(intMonoid.empty) 
+    }
     def add[A](xs: List[A])(implicit m: Monoid[A]): A = 
         xs.foldRight[A](m.empty)( (h, acc) => m.combine(h, acc))
 
