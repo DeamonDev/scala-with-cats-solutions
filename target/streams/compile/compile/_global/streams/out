@@ -1,6 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/src/main/scala/chapter3/FunctorPlayground.scala:49:19: missing argument list for method decode in object Codec[0m
-[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
-[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `decode _` or `decode(_)(_)` instead of `decode`.[0m
-[0m[[0m[31merror[0m] [0m[0m    println(decode[Box[Double]])[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/src/main/scala/chapter4/MonadPlayground.scala:11:53: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[?][0m
+[0m[[0m[31merror[0m] [0m[0m    val opt3 = Monad[Option].flatMap(opt2)(a => 100 * a)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[0minfo[0m] [0m[0mInt <: Option[?]?[0m
+[0m[[0m[0minfo[0m] [0m[0mfalse[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

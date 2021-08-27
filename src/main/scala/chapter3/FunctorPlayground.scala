@@ -4,11 +4,9 @@ import cats.Functor
 import cats.instances.list._
 import cats.instances.option._
 import cats.syntax.functor._
-
-import chapter3.TreeFunctor._
-import chapter3.ContramapPrintable._
 import chapter3.Codec._
-
+import chapter3.ContramapPrintable._
+import chapter3.TreeFunctor._
 
 
 object FunctorPlayground extends App { 
