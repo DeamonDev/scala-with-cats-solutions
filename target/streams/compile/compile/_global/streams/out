@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/src/main/scala/chapter3/TreeFunctor.scala:16:13: Unmatched closing brace '}' ignored here[0m
-[0m[[0m[31merror[0m] [0m[0m            }     [0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/functional-programming-in-scala-red-book/src/main/scala/cats-seed/src/main/scala/chapter3/FunctorPlayground.scala:49:19: missing argument list for method decode in object Codec[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `decode _` or `decode(_)(_)` instead of `decode`.[0m
+[0m[[0m[31merror[0m] [0m[0m    println(decode[Box[Double]])[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

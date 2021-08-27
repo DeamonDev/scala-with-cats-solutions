@@ -6,6 +6,10 @@ import cats.instances.option._
 import cats.syntax.functor._
 
 import chapter3.TreeFunctor._
+import chapter3.ContramapPrintable._
+import chapter3.Codec._
+
+
 
 object FunctorPlayground extends App { 
     val list1 = List(1,2,3)
@@ -31,5 +35,17 @@ object FunctorPlayground extends App {
     val myTree: Tree[Int] = Branch(Leaf(1), Branch(Leaf(3), Leaf(42)))
     val newTree = myTree.map(x => x * 2)
     println(newTree)
+
+    println(format("hello"))
+    println(format(true))
+
+    println(format(Box("Hello Kitty!")))
+    println(format(Box(true)))
+
+    println(encode(123.4))
+    println(decode[Double]("123.4"))
+
+    println(encode(Box(123.4)))
+    println(decode[Box[Double]]("123.4"))
 
 }
