@@ -7,6 +7,7 @@ import cats.instances.list._
 import cats.syntax.applicative._ //for pure
 import cats.syntax.functor._
 import cats.syntax.flatMap._
+import cats.syntax.either._
 
 object MonadPlayground extends App { 
 
@@ -38,6 +39,22 @@ object MonadPlayground extends App {
     println(sumSquare(Option(3), Option(4)))
     println(sumSquare(List(1,2,3), List(4,5)))
     println(sumSquare(3: Id[Int], 4: Id[Int]))
+
+    val a = 3.asRight[String]
+    val b = 4.asRight[String]
+
+    for { 
+        x <- a 
+        y <- b
+    } yield x*x + y*y
+
+    def countPositive(nums: List[Int]) = nums.foldLeft(0.asRight[String]) { 
+        (acc, num) => if (num > 0) acc.map(_ + 1) else Left("Negative, stopping")
+    }
+
+    println(countPositive(List(1,2,3)))
+    println(countPositive(List(1,-2,3)))
+
 
 
 }

@@ -191,7 +191,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home",
+                "home": "/usr/local/Cellar/openjdk@11/11.0.10/libexec/openjdk.jdk/Contents/Home",
                 "options": [
                     "-Duser.dir=/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/project"
                 ]
