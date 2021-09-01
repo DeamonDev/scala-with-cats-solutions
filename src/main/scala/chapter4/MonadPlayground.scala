@@ -71,6 +71,68 @@ object MonadPlayground extends App {
     val db = Db(users, passwords)
     
     println(chapter4.DatabaseWithReader.checkLogin(1, "kitty").run(db))
-    println(chapter4.DatabaseWithReader.checkLogin(4, "davinci").run(db))
 
+    import cats.data.Reader
+
+    final case class Cat(name: String, favoriteFood: String)
+    val catName: Reader[Cat, String] = Reader( cat => cat.name )
+
+    println(catName.run(Cat("Omi", "meatty")))
+
+    val greetKitty: Reader[Cat, String] = 
+        catName.map( name => s"Hello ${name}")
+
+    println(greetKitty.run(Cat("Omi", "meatty")))
+
+    val feedKitty: Reader[Cat, String] = Reader(cat => s"Have a nice bowl of ${cat.favoriteFood}")
+
+    val greetAndFeed: Reader[Cat, String] = 
+        for { 
+            greet <- greetKitty
+            feed <- feedKitty
+        } yield s"$greet. $feed." 
+
+    println(greetAndFeed(Cat("Omi", "meatty")))
+
+    import cats.data.State
+    import State._
+
+    val aState = State[Int, String] { state => (state, s"The state is $state")}
+
+    val (state, result) = aState.run(10).value
+    println("(state, result) = " + "(" + state + ", " + result + ")")
+
+    val justTheState = aState.runS(10).value
+    println(justTheState)
+
+    val justTheResult = aState.runA(10).value
+    println(justTheResult)
+
+    val step1 = State[Int, String] { num => 
+        val ans = num + 1
+        (ans, s"Result of step1: $ans")
+    }
+
+    val step2 = State[Int, String] { num => 
+        val ans = num * 2
+        (ans, s"Result of step2: $ans")
+    }
+
+    val both = for { 
+        a <- step1
+        b <- step2
+    } yield (a,b)
+
+    val (s, r) = both.run(20).value
+
+    val program: State[Int, (Int, Int, Int)] = for { 
+        a <- get[Int]
+        _ <- set[Int](a + 1)
+        b <- get[Int]
+        _ <- modify[Int](_ + 1)
+        c <- inspect[Int, Int](_ * 1000)
+    } yield (a, b, c)
+
+    val (state1, result1) = program.run(1).value
+    println("(state, result) = (" + state1 + ", " + result1 + ")")
 }
