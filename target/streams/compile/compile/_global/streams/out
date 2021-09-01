@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter4/ParallelFactorial.scala:64:17: not enough arguments for method result: (awaitable: scala.concurrent.Awaitable[T], atMost: scala.concurrent.duration.Duration)T.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter atMost.[0m
-[0m[[0m[31merror[0m] [0m[0m    Await.result(Future.sequence(Vector([0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter4/DatabaseWithReader.scala:23:32: value pure is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m            .getOrElse { false.pure[DbReader]}[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -55,6 +55,22 @@ object MonadPlayground extends App {
     println(countPositive(List(1,2,3)))
     println(countPositive(List(1,-2,3)))
 
+    //database playground
+    val users = Map(
+        1 -> "piotr",
+        2 -> "maciej",
+        3 -> "bodzio"
+    )
 
+    val passwords = Map(
+        "piotr" -> "kitty",
+        "maciej" -> "acidburn",
+        "bodzio" -> "brewiarz"
+    )
+
+    val db = Db(users, passwords)
+    
+    println(chapter4.DatabaseWithReader.checkLogin(1, "kitty").run(db))
+    println(chapter4.DatabaseWithReader.checkLogin(4, "davinci").run(db))
 
 }

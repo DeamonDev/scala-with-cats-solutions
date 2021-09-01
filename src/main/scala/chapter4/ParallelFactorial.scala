@@ -63,4 +63,27 @@ object ParallelFactorial extends App {
 
     println(writerFactorial(10).run)
 
+
+    import cats.data.Reader
+
+    final case class Cat(name: String, favoriteFood: String)
+    val catName: Reader[Cat, String] = Reader( cat => cat.name )
+
+    println(catName.run(Cat("Omi", "meatty")))
+
+    val greetKitty: Reader[Cat, String] = 
+        catName.map( name => s"Hello ${name}")
+
+    println(greetKitty.run(Cat("Omi", "meatty")))
+
+    val feedKitty: Reader[Cat, String] = Reader(cat => s"Have a nice bowl of ${cat.favoriteFood}")
+
+    val greetAndFeed: Reader[Cat, String] = 
+        for { 
+            greet <- greetKitty
+            feed <- feedKitty
+        } yield s"$greet. $feed." 
+
+    println(greetAndFeed(Cat("Omi", "meatty")))
+
 }
