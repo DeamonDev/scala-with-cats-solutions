@@ -135,4 +135,19 @@ object MonadPlayground extends App {
 
     val (state1, result1) = program.run(1).value
     println("(state, result) = (" + state1 + ", " + result1 + ")")
+
+    import cats.syntax.flatMap._
+
+    def retry[F[_] : Monad, A](start: A)(f: A => F[A]): F[A] = 
+        f(start).flatMap { a => 
+            retry(a)(f)
+        }
+
+
+    def retryTailRecM[F[_] : Monad, A](start: A)(f: A => F[A]): F[A] = 
+        Monad[F].tailRecM(start) { a => 
+            f(a).map(a2 => Left(a2))
+        }
+
+     println(retryTailRecM(100)(a => if (a == 0) None else Some(a - 1)))
 }

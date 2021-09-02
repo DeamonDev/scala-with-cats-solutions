@@ -1,4 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter4/DatabaseWithReader.scala:23:32: value pure is not a member of Boolean[0m
-[0m[[0m[31merror[0m] [0m[0m            .getOrElse { false.pure[DbReader]}[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter4/TreeMonad.scala:24:20: missing argument list for method flatMap[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `flatMap _` or `flatMap(_)(_)` instead of `flatMap`.[0m
+[0m[[0m[31merror[0m] [0m[0m            flatMap(f(a)) match { [0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter4/TreeMonad.scala:25:27: pattern var v in method tailRecM is never used; `v@_` suppresses this warning[0m
+[0m[[0m[31merror[0m] [0m[0m                case Left(v) => ???[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

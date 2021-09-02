@@ -15,7 +15,7 @@ object PostOrderCalculator extends App {
     }
 
     def evalAll(input: List[String]): CalcState[Int] = 
-        input.foldLeft(0.pure[CalcState])( (acc, s) => acc.flatMap(_ => evalOne(s)) )
+        input.foldLeft(10.pure[CalcState])( (acc, s) => acc.flatMap(_ => evalOne(s)) )
 
     def evalInput(input: String): Int = 
         evalAll(input.split(" ").toList).runA(Nil).value
@@ -45,7 +45,7 @@ object PostOrderCalculator extends App {
     val multistageCalculation = evalAll(List("1", "2", "+", "3", "*"))
     println(multistageCalculation.runA(Nil).value)
 
-    val ev = evalInput("1 2 + 3 * 10 *")
+    val ev = evalInput("1")
     println(ev)
 
 }
