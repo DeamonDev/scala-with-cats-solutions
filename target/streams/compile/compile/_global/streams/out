@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter5/MonadTransformersPlayground.scala:36:1: illegal start of simple expression[0m
-[0m[[0m[31merror[0m] [0m[0m}[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter5/MonadTransformersPlayground.scala:69:16: not found: value addAll[0m
+[0m[[0m[31merror[0m] [0m[0m    val sum1 = addAll("10", "16", "49")[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
