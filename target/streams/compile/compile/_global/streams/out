@@ -1,5 +1,24 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter7/Folds.scala:66:25: not enough arguments for method result: (awaitable: scala.concurrent.Awaitable[T], atMost: scala.concurrent.duration.Duration)T.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters awaitable, atMost.[0m
-[0m[[0m[31merror[0m] [0m[0m    println(Await.result())[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter8/TestingCode.scala:32:13: not found: value hostname[0m
+[0m[[0m[31merror[0m] [0m[0m            hostname.traverse(client.getUptime).map(_.sum)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter8/TestingCode.scala:32:38: missing argument list for method getUptime in trait UptimeClient[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `getUptime _` or `getUptime(_)` instead of `getUptime`.[0m
+[0m[[0m[31merror[0m] [0m[0m            hostname.traverse(client.getUptime).map(_.sum)[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter8/TestingCode.scala:3:28: Unused import[0m
+[0m[[0m[31merror[0m] [0m[0mimport cats.instances.list._[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter8/TestingCode.scala:4:28: Unused import[0m
+[0m[[0m[31merror[0m] [0m[0mimport cats.syntax.functor._[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter8/TestingCode.scala:5:29: Unused import[0m
+[0m[[0m[31merror[0m] [0m[0mimport cats.syntax.traverse._[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter8/TestingCode.scala:30:45: parameter value client in class UptimeService is never used[0m
+[0m[[0m[31merror[0m] [0m[0m    class UptimeService[F[_] : Applicative](client: UptimeClient[F]) { [0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter8/TestingCode.scala:31:28: parameter value hostnames in method getTotalUptime is never used[0m
+[0m[[0m[31merror[0m] [0m[0m        def getTotalUptime(hostnames: List[String]): F[Int] = [0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m7 errors found[0m
