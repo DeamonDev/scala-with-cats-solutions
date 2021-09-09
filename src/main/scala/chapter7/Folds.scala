@@ -1,5 +1,8 @@
 package chapter7
 
+import scala.concurrent.Future
+import scala.concurrent.Await
+
 object Folds extends App { 
     val myList = (1 to 10).toList
     
@@ -38,6 +41,29 @@ object Folds extends App {
     val maybeInt = Option(123)
 
     Foldable[Option].foldLeft(maybeInt, 10)(_ * _)
+
+    import cats.Traverse
+    import cats.instances.future._
+    import scala.concurrent.ExecutionContext.Implicits.global
+    import scala.concurrent.duration._
+
+    val hostnames = List(
+      "alpha.example.com",
+      "beta.example.com",
+      "gamma.demo.com"
+    )
+    def getUptime(hostname: String): Future[Int] =
+      Future(hostname.length * 60)
+
+    val totalUpTime: Future[List[Int]] = 
+        Traverse[List].traverse(hostnames)(getUptime)
+
+    println(Await.result(totalUpTime, 1.second))
+
+    val numbers = List(Future(1), Future(2), Future(3))
+    val numbers2: Future[List[Int]] = Traverse[List].sequence(numbers)
+
+    println(Await.result(numbers2, 1.second))
 
     
 

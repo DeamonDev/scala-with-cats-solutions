@@ -1,7 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter7/Folds.scala:40:41: illegal start of simple expression[0m
-[0m[[0m[31merror[0m] [0m[0m    Foldable[Option].foldLeft(maybeInt, )[0m
-[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter7/Folds.scala:42:1: ')' expected but '}' found.[0m
-[0m[[0m[31merror[0m] [0m[0m}[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/piotrrudnicki/Documents/MyProgrammingProjects/cats-seed/src/main/scala/chapter7/Folds.scala:66:25: not enough arguments for method result: (awaitable: scala.concurrent.Awaitable[T], atMost: scala.concurrent.duration.Duration)T.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters awaitable, atMost.[0m
+[0m[[0m[31merror[0m] [0m[0m    println(Await.result())[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
